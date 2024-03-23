@@ -28,5 +28,7 @@ It was designed specifically with Origin's game service in mind, so if you plan 
 
 ## Sample
 
-https://github.com/Erebonia/Origins-Website-publicver/assets/52137104/db9f5892-640f-43e9-b0f6-ae1de97d3464
+https://github.com/Erebonia/Origins-Website-Public/assets/52137104/0b8eee20-b6ca-43f7-b295-8ac6db486b97
+
+
 
