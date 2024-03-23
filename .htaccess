@@ -1,0 +1,22 @@
+#Confused? https://www.youtube.com/watch?reload=9&v=-6LyG9I-FPc
+
+DirectoryIndex home.php
+
+RewriteEngine on
+
+## Remove trailing slash if not directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R] # <- for test, for prod use [L,R=301]
+
+#Don't apply to existing directories. If folder exists on server then don't change anything and don't run the rule.
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Check for file with .php extension
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+#Allow the PHP pages to display
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+#Remove directory indexes
+Options -Indexes
+

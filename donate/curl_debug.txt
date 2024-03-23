@@ -1,0 +1,54 @@
+*   Trying 173.0.92.8:443...
+* TCP_NODELAY set
+* Connected to ipnpb.paypal.com (173.0.92.8) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: cacert.pem
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=San Jose; O=PayPal, Inc.; CN=active-www.paypal.com
+*  start date: Apr  6 00:00:00 2022 GMT
+*  expire date: Feb 24 23:59:59 2023 GMT
+*  subjectAltName: host "ipnpb.paypal.com" matched cert's "ipnpb.paypal.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x561d1e97d770)
+> POST /cgi-bin/webscr HTTP/2
+Host: ipnpb.paypal.com
+accept: */*
+connection: Close
+content-length: 996
+content-type: application/x-www-form-urlencoded
+
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 200 
+< content-type: text/html; charset=utf-8
+< content-length: 8
+< server: nginx
+< date: Wed, 28 Dec 2022 05:42:30 GMT
+< cache-control: max-age=0, no-cache, no-store, must-revalidate
+< content-security-policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-3b2vCE7B5zDTifgK8V3zaXQBNfBbPNjNpQQAlXV3/NP3+L3W' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; upgrade-insecure-requests;; report-uri https://www.paypal.com/csplog/api/log/csp
+< etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+< paypal-debug-id: 83b12fde25f38
+< set-cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Wed, 28 Dec 2022 14:28:26 GMT; HttpOnly; Secure
+< set-cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Thu, 28 Dec 2023 05:42:30 GMT; Secure; HttpOnly
+< set-cookie: x-pp-s=eyJ0IjoiMTY3MjIwNjE1MDg3NyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+< set-cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Sat, 31 Dec 2022 05:42:30 GMT; HttpOnly; Secure; SameSite=None
+< set-cookie: nsid=s%3AusNc44thn8Cy996SGOu8-9EgZaMGc88G.%2FUBz%2BgF7avtCzGPSYDHwnkQ7F8MmuUqd10Auzvh9UM4; Path=/; HttpOnly; Secure
+< set-cookie: ts=vreXpYrS%3D1766900550%26vteXpYrS%3D1672207950%26vr%3D5740eca01850a1d55ff0497cfd161c02%26vt%3D5740eca01850a1d55ff0497cfd161c01%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sat, 27 Dec 2025 05:42:30 GMT; HttpOnly; Secure
+< set-cookie: ts_c=vr%3D5740eca01850a1d55ff0497cfd161c02%26vt%3D5740eca01850a1d55ff0497cfd161c01; Path=/; Domain=paypal.com; Expires=Sat, 27 Dec 2025 05:42:30 GMT; Secure; HttpOnly
+< strict-transport-security: max-age=31536000; includeSubDomains; preload
+< traceparent: 00-000000000000000000083b12fde25f38-8b94c5e3ae184bd2-01
+< x-content-type-options: nosniff
+< x-frame-options: SAMEORIGIN
+< x-xss-protection: 1; mode=block
+< dc: phx-origin-www-1.paypal.com
+< 
+* Closing connection 0

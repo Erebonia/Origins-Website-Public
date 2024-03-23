@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+/*@import url('./fonts/PatchyRobots.otf');
+@import url('./fonts/PatchyRobots.ttf');*/
+@font-face {
+    font-family: 'Montserrat Font';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/BEBASNEUE-BOLD.ttf);
+    src: url(../fonts/BEBASNEUE-BOLD.ttf);
+}
+
+body {
+    color: white;
+    background: gray;
+}
+p{color: white;}
+
+a {color: yellow; text-decoration: none !important;}
+a:hover {color: yellow;}
+ul {padding: 0px !important;}
+/*.bg1 {background: url(../img/a.jpg) no-repeat;background-size:100%;background-position:top center; }*/
+.bg1 {
+    background: url(../img/a.jpg);
+    background-position-x: center;
+    background-position-y: bottom;
+    /*background-size: auto;*/
+    background-size: cover;
+    min-height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+.bg3 {background: url(../img/bg1.jpg) top center no-repeat; background-size: cover;}
+.bg4 {background: url(../img/bg2.jpg) top center no-repeat; background-size: contain;}
+.pagebg1 {
+    background: url(../img/b.jpg) fixed no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.pagebg2 {
+    background: url(../img/bg1.jpg) fixed no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.pagebg3 {
+    background: url(../img/bg2.jpg) fixed no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.body {
+    font-family: 'Montserrat Font';
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: yellow !important;
+    background-color: transparent;
+}    
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: yellow !important;
+    background-color: transparent !important;
+}	
+	h1,h2,h3,h4,h5,h6{color:white;text-transform:uppercase; text-shadow: 0px 0px 9px white;}
+.navbar-brand  span{
+	color: #fed136;
+	font-size:25px;font-weight:700;letter-spacing:0.1em;
+    font-family: 'Montserrat Font';
+    transition: 0.6s;
+}
+.navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Montserrat Font';
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: 0.6s;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+    font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Montserrat Font';
+    transition: 0.6s;
+}
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid #fed136;
+}
+.dropdown-menu {border: 0px;background: transparent;}
+.dropdown-menu li a {display: block; color: white;}
+.dropdown-menu li a:hover{background: transparent !important; color: yellow;}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,.navbar-default .navbar-nav > .active > a:focus {
+  color: yellow;
+  background-color: transparent !important;
+}
+.dropdown-item:hover{background-color:#fed136;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+    transition: 0.6s;
+	}
+	
+ #banner {
+ 	transition: 0.6s;
+ }
+ .shrink {
+    padding-top: 0px;
+    padding-bottom: 0;
+    background-color: rgba(33, 37, 41, 0.3) !important;
+}
+#banner .navbar-nav>li {margin-top: 20px;transition: 0.6s;}
+#banner .navbar-header>a {margin-top: 5px;transition: 0.6s;}
+.shrink .navbar-header>a {margin-top: -5px !important;}
+.shrink .navbar-nav>li {color: white !important;margin-top: 0px !important;}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+.navbar-default {
+    background-color:transparent; /*rgba(0,0,0,0.3)*/
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: yellow;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    text-shadow: 0px 0px 0.2px black;
+    padding: 0px;
+    margin: 15px;
+    padding-bottom: 4px;
+}
+
+    .navbar-default .navbar-nav > li > a:hover {
+        color: yellow;
+        border-bottom: 3px solid yellow;
+        font-family: 'Montserrat Font';
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: black;
+    }
+.navbar-nav {
+    margin-left: 200px;
+
+}
+@media (min-width: 768px) {
+  .hidenav {display: none !important;}
+}
+/*.btnn a {transition: 0.5s; font-size: 20px;font-weight: 20px; font-family:'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;display: block;background: black;box-shadow: 0px 0px 9px white;text-decoration: none; padding: 10px 0px;margin: 25px 30px;  }
+.btnn a:hover {background: yellow;color: black; border-radius: 20px;}*/
+.rss p {
+    font-size: 10px;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 5px;
+    background-color: #17222b;
+    text-align: center !important;
+    display: inline-block;
+    font-family: 'Montserrat Font';
+}
+.rss a {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Montserrat Font';
+    font-size: 20px;
+    line-height: 0px;
+}
+.ckc {padding: 5px;}
+
+
+h2{text-transform: uppercase;letter-spacing: 1px;}
+	hr{margin-top: 0px;padding-top: 0px; width: 8%; text-align: center;margin: 0 auto;margin-bottom: 20px;}
+
+
+
+.foot ul li{list-style: none;float: left; margin: 0px 0px;}
+.foot ul li a {border-right: 1px solid grey; padding: 0px 10px;font-size: 90%; letter-spacing: 1px; font-weight: 700; }
+.copyrigh p {font-size: 90%;}    
+.socials ul{list-style: none;}
+.socials ul li a img {width: 10%;opacity: 0.5;float: left; margin: 10px; text-align: center;}
+.socials ul li a img:hover {opacity: 1; transition-duration: 0.3s;}
+.socials ul {width: 90%;}
+.socials ul li {padding: 0px;margin: 0 auto; display: block;}
+
+.btt a {
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to left, rgba(255,215,0,0.5), rgba(255,215,0,0.9));
+    color: black;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btt a:hover {
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+
+.featurette-divider {border: 1px solid grey !important;}
+/* mobile view */
+@media (max-width:500px)
+{
+	.navbar-nav{
+		background-color:#000;
+		border-top:3px solid #fed136;
+		color:#fff;
+		z-index:1;
+		margin-top:5px;
+		}
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+    font-weight: 500;
+    }
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+
+}
+@media (max-width: 768px) {
+.navbar-nav {
+    float: left;
+    margin: 0px;
+    width: 100%;
+}
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
