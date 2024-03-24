@@ -3,13 +3,12 @@
 #### Primary Function: This website serves a central information hub for users of the game service. 
 #### Secondary Function: Information querying and tools for staff.
 
-## Features
+## Main Features
 - Main Homepage that includes Synopsis, Mission, and a FAQ section
 - Microsoft SQL Database integration 
 - Administrative panel that queries and updates the DB.
 - High Scores page with data drawn from the DB.
 - Local timezone display
-- ETC
 
 ## Admin Panel Features
 - Reward players with game currency
